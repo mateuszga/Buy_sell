@@ -1,0 +1,11 @@
+#ads
+	- @ads.each do |ad|
+		.ad
+			.ad_image
+				=link_to (image_tag ad.image.url(:medium)), ad
+			.ad_content
+				.title
+					%h2= link_to ad.title, ad
+				.data.clearfix
+					Price:
+					%p= ad.price

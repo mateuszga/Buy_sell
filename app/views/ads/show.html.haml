@@ -1,0 +1,19 @@
+#ad_show
+	%h1= @ad.title
+	%p
+	Created
+	= time_ago_in_words(@ad.created_at)
+	ago
+	.clearfix
+		.ad.image.description
+			= image_tag @ad.image.url(:medium)
+			.description= simple_format(@ad.description)
+		.ad_data
+			Price:   
+			= @ad.price
+			Telephone number:   
+			= @ad.tel
+%p
+= link_to "Home", root_path
+= link_to "Edit", edit_ad_path(@ad)
+= link_to "Delete", ad_path(@ad), method: :delete, data: { confirm: "Are you sure?" }

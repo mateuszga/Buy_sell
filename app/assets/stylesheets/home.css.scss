@@ -1,0 +1,36 @@
+#ads {
+	.ad {
+		background: #e9ecef;
+		width: 30%;
+		float: left;
+		margin: 1rem 1%;
+		border: 2px solid #474747;
+		border-radius: 0.3rem;
+		.ad_image {
+			height: 400px;
+			overflow: hidden;
+			img {
+				width: 100%;
+				border-radius: .3rem .3rem 0 0;
+			}
+		}
+		.ad_content {
+			h2 {
+				margin: 0;
+				font-weight: 100;
+				padding: 1rem 5%;
+				border-bottom: 1px solid #E4E4E4;
+				font-size: 1.25rem;
+				a {
+					text-decoration: none;
+					color: #461f46;
+					
+				}
+			}
+			.data {
+				padding: .75rem 5%;
+				color: #969696;
+				}
+			}
+		}
+	}
